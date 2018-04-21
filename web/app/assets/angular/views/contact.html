@@ -1,0 +1,76 @@
+<div ng-include="'/app/assets/angular/views/header.html'" ng-controller="HeaderCtrl"></div>
+<section class="service-2 section">
+    <div class="container">
+        <div class="row">
+            <div class="text-center"  >
+                <h2>Get In Touch</h2>
+                <div class="border"></div>
+            </div>
+            <div class="contact-details col-md-6 ">
+                <span style="font-size: 28px; font-weight: 600">Contact Details</span>
+                <p>IIMSS is here to provide you with more information, answer any question you may have.</p>
+                <ul class="contact-short-info">
+                    <li>
+                        <i class="tf-ion-ios-home"></i>
+                        <span>Indian Institute of Mind and Spiritual Sciences, Plot No. 60, G2, Aravali Hills, Jagatpura, Jaipur</span>
+                    </li>
+                    <li>
+                        <i class="tf-ion-android-phone-portrait"></i>
+                        <span>Phone: +91-8003094570 / 9811167333</span>
+                    </li>
+                    <li>
+                        <i class="tf-ion-android-globe"></i>
+                        <span>Fax: +91-8003094570</span>
+                    </li>
+                    <li>
+                        <i class="tf-ion-android-mail"></i>
+                        <span>Email: hello@meghna.com</span>
+                    </li>
+                </ul>
+                <!-- Footer Social Links -->
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="#"><i class="tf-ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="tf-ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="tf-ion-social-dribbble-outline"></i></a></li>
+                        <li><a href="#"><i class="tf-ion-social-linkedin-outline"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 plr0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28483.1389332206!2d75.82010317781692!3d26.827469922502587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db61c9f00bc3b%3A0x87ff828bc6df8eee!2sJagatpura%2C+Jaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1524245858196" frameborder="0" style="border:0; width: 100%; height: 240px; margin-top: 10px;"></iframe>
+                </div>
+                <!--/. End Footer Social Links -->
+            </div>
+            <div class="contact-form col-md-6 ">
+                <h5>Fill out the form, we will reach out to you as soon as possible.</h5>
+                <form id="contact-form" method="post" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                    </div>
+                    <div class="form-group">
+                            <input type="text" placeholder="Mobile No." class="form-control" name="mobile" id="mobile">
+                        </div>
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
+                    </div>
+                    <div id="mail-success" class="success">
+                        Thank you. The Mailman is on His Way :)
+                    </div>
+                    <div id="mail-fail" class="error">
+                        Sorry, don't know what happened. Try later :(
+                    </div>
+                    <div id="cf-submit">
+                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div ng-include="'/app/assets/angular/views/footer.html'" ></div>

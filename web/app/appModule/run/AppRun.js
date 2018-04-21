@@ -1,6 +1,6 @@
 GMApp.run(['$rootScope', '$http', '$window', '$filter', 'ipCookie', '$mdDialog', 
     function ($rootScope, $http, $window, $filter, ipCookie, $mdDialog) {
-        var windowWidth = window.innerWidth;
+		var windowWidth = window.innerWidth;
 		if(windowWidth < 992) {
 			$("body").removeClass("sidenav-toggled");
 		} else {
