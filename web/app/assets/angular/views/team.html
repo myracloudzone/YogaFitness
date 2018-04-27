@@ -12,7 +12,7 @@
                 <div class="col-md-12 col-sm-12">
                     <div class="row ">
                         <div class="col-md-12 col-sm-12 col-xs-12 service-item1">
-                            <div class="col-md-4 col-sm-12 ">
+                            <div class="col-md-4 col-sm-12 " ng-click="memberId = 1">
                                 <div class="team-member text-center">
                                     <div class="member-photo">
                                         <img class="img-responsive" src="/app/assets/angular/images/team/member-4.png" width="360"alt="Meghna">
@@ -28,14 +28,14 @@
                                     
                                     <div class="member-content">
                                         <h3>Ms. Neerja Handa</h3>
-                                        <span>Director</span>
+                                        <span>Director-Trainer</span>
                                     </div>    
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-12 ">
+                            <div class="col-md-4 col-sm-12 " ng-click="memberId = 2">
                                 <div class="team-member text-center">
                                     <div class="member-photo">
-                                        <img class="img-responsive" src="/app/assets/angular/images/team/member-5.jpg" width="360" alt="Meghna">
+                                        <img class="img-responsive" src="/app/assets/angular/images/team/member-5.jpg" width="360" alt="">
                                         <div class="mask">
                                             <ul class="clearfix">
                                                 <li><a href="https://www.facebook.com/drkavitabhargava" target="_blank"><i class="tf-ion-social-facebook imgIcon"></i></a></li>
@@ -47,20 +47,20 @@
                                     </div>
                                     <div class="member-content">
                                         <h3>Dr. Kavita Bhargava</h3>
-                                        <span>Director</span>
+                                        <span>Director-Trainer</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-12 ">
+                            <div class="col-md-4 col-sm-12" ng-click="memberId = 3">
                                 <div class="team-member text-center">
                                         <div class="member-photo">
-                                            <img class="img-responsive" src="/app/assets/angular/images/team/member-6.jpg" width="360" height="320" style="height: 360px;" alt="Meghna">
+                                            <img class="img-responsive" src="/app/assets/angular/images/team/member-6.jpg" width="360" height="320" style="height: 352px;" alt="">
                                             <div class="mask">
                                                 <ul class="clearfix">
-                                                    <li><a href="#"><i class="tf-ion-social-facebook imgIcon"></i></a></li>
-                                                    <li><a href="#"><i class="tf-ion-social-twitter imgIcon"></i></a></li>
-                                                    <li><a href="#"><i class="tf-ion-social-google-outline imgIcon"></i></a></li>
-                                                    <li><a href="#"><i class="tf-ion-social-dribbble imgIcon"></i></a></li>					
+                                                    <li><a href="#" style="margin:5px;"><i class="tf-ion-social-facebook imgIcon"></i></a></li>
+                                                    <li><a href="#" style="margin:5px;"><i class="tf-ion-social-twitter imgIcon"></i></a></li>
+                                                    <li><a href="#" style="margin:5px;"><i class="tf-ion-social-google-outline imgIcon"></i></a></li>
+                                                    <li><a href="#" style="margin:5px;"><i class="tf-ion-social-linkedin-outline imgIcon"></i></a></li>					
                                                 </ul>
                                             </div>
                                         </div>
@@ -70,6 +70,169 @@
                                         </div>
                                 </div>
                             </div>
+                            <div class="col-sm-12" style="margin-top: 15px;" ng-if="memberId == 2">
+                                <span class="pull-right" ng-click="memberId = null" ng-if="memberId != null"><a data-scroll ng-click="closeDetail()" class="btn btn-main closeBtn">Close</a></span>
+                                <p class="text-center"><img src="/app/assets/angular/images/team/member-5.jpg" alt="" class="imgPro"></p>
+                                <div class="card">
+                                    <h1>Dr. Kavita Bhargava</h1>
+                                    <span class="title">Director - Trainer</span>
+                                    <hr></hr>
+                                    <p class="text-justify">Dr. Bhargava is an accomplished <strong class="color-black">Psychologist, Clinical Hypnotherapist and
+                                            Corporate Trainer.</strong> Dr. Bhargava has worked with many educational, health and
+                                            research institutions in various capacities. Along with the professional practice Dr.
+                                            Bhargava is presently working as the Director of Indian Institute of Mind and
+                                            Spiritual Sciences (IIMSS). Dr. Bhargava’s qualifications include PhD- Psychology,
+                                            NLP Practitioner, IMDHA Certified Clinical Hypnotherapist and Certified
+                                            Competency Mapping Manager. It is significant to emphasize that Dr. Bhargava is a
+                                            <strong class="color-black"></strong>Gold Medalist</strong> in Psychology.
+                                    </p>
+                                    <p class="text-justify">        
+                                            Dr. Bhargava is a sought after Trainer in the country who has contributed more than
+                                            300 hrs of training to the industry and has trained more than 3500 participants in
+                                            Behavioral Sciences as well as Clinical Hypnotherapy. Optum (Health Care Business
+                                            of United Health Group); EKAA (Formerly known as CHII- California Hypnosis
+                                            Institute of India); International Trainers Federation, Banasthali University,
+                                            Rajasthan; the famous Paradise Restaurant, Bangalore; Christ University, Bangalore;
+                                            Tata Institute for Social Sciences (TISS), Mumbai; Office of the District Education
+                                            Officer, Jaipur; Eternal Hospital, Jaipur; Institute for Rural Management, Jaipur;
+                                            HPCL Zonal Trainings, Jaipur; Sophia College, Ajmer; Jail Training Institute,
+                                            Ajmer; Rashtriya Military School, Ajmer; Mayo College, Ajmer and Mayoor School,
+                                            Ajmer are few of the organizations that have availed Dr. Bhargava’s services. Dr.
+                                            Bhargava’s training modules include “Self Management through Mind Sciences”,
+                                            Personality Development through Mind Sciences”, “Time Management through
+                                            Mind Sciences”, “Depression and Stress Management”, “Career Counseling through
+                                            Mind Sciences”, “Integrated Clinical Hypnotherapy Level 1”, “Certificate Course in
+                                            Counseling with Internship”, “Competency Mapping with Internship”.</p>
+                                    <p class="text-justify">
+                                            Dr. Bhargava holds life memberships to a number of professional bodies like
+                                            International Medical &amp; Dental Hypnotherapy Association (IMDHA), Indian
+                                            Academy of Applied Psychology (IAAP) and has also authored a book for Mapping
+                                            Competencies for State Administrative Services, published in Germany.</p>
+                                    <div style="margin: 24px 0;">
+                                        <a href="#" style="margin:5px;"><i class="fs20 tf-ion-social-facebook"></i></a> 
+                                        <a href="#" style="margin:5px;"><i class="fs20 tf-ion-social-twitter"></i></a>  
+                                        <a href="#" style="margin:5px;"><i class="fs20 tf-ion-social-google-outline"></i></a>  
+                                        <a href="#" style="margin:5px;"><i class="fs20 tf-ion-social-linkedin-outline"></i></a> 
+                                    </div>
+                                    <p class="text-center">
+                                        <a data-scroll href="/secure/contact" class="btn btn-main">Contact Us</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12" style="margin-top: 15px;"  ng-if="memberId == 1">
+                                <span class="pull-right" ng-click="memberId = null" ng-if="memberId != null"><a data-scroll ng-click="closeDetail()" class="btn btn-main closeBtn">Close</a></span>
+                                <p class="text-center"><img src="/app/assets/angular/images/team/member-4.png" alt="" class="imgPro"></p>
+                                <div class="card">
+                                    <h1>Ms. Neerja Handa</h1>
+                                    <span class="title">Director - Trainer</span>
+                                    <hr></hr>
+                                    <p class="text-justify">Ms. Handa is an inspiring individual who aspires to change the way one looks and
+                                            derive positive meaning out of situations, circumstances and problems in life. Ms. Handa
+                                            worked with the Garment Industry for more than 25 years of life beautifying the
+                                            physical body of people in India and abroad till she heard an inner voice that told
+                                            her to move ahead from body to mind and soul.
+                                    </p>
+                                    <p class="text-justify">        
+                                            Ms. Neerja Handa started her journey in Mind Sciences way back in 2009 with
+                                            California Hypnosis Institute of India (CHII) now known as EKAA. Since then she
+                                            has been one of the best Clinical Hypnotherapists and the Facilitator for Level 1-4 of
+                                            Integrated Clinical Hypnotherapy, EKAA. It is noteworthy to state that Ms. Neerja has been
+                                            awarded <strong class="color-black">‘Best Hypnotherapy Trainer’</strong> for four consecutive years.</p>
+                                    <p class="text-justify">
+                                            Ms. Neerja is a renowned Hypnotherapist, Past Life Regression Practitioner, Reiki
+                                            Practitioner and a Trainer by profession and also an expert in Redikall Healing, Tarot Card
+                                            Reading, Theta-healing, Soul Group Therapies as known as Family Constellation.</p>
+                                    <p class="text-justify">
+                                            To add to her credits Ms. Handa is an Honorary Member with International Trainers
+                                            Federation and on the advisory boards of ITF School of Mind Sciences, KPsych Services,
+                                            Alternative Healing Centre and a number of other organisations working for alternative
+                                            healing modalities across the country.</p>
+                                    <p class="text-justify">
+                                            Ms. Handa is passionate about promoting Spiritual Mentoring through a scientific approach,
+                                            which is visible through her programmes like Psycho-Socio- Spiritual Awakening: A Holistic
+                                            Way to Reach Self-Actualisation, Relationship Engineering, Mystic BEATS, Image
+                                            Consulting for Alternative Healing Modalities, Spiritual Parenting etc.</p>
+                                    <div style="margin: 24px 0;">
+                                        <a href="#" style="margin:5px;"><i class="fs20 fa fa-dribbble fs20"></i></a> 
+                                        <a href="#" style="margin:5px;"><i class="fs20 fa fa-twitter fs20"></i></a>  
+                                        <a href="#" style="margin:5px;"><i class="fs20 fa fa-linkedin fs20"></i></a>  
+                                        <a href="#" style="margin:5px;"><i class="fs20 fa fa-facebook fs20"></i></a> 
+                                    </div>
+                                    <p class="text-center">
+                                        <a data-scroll href="/secure/contact" class="btn btn-main">Contact Us</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12" style="margin-top: 15px;" ng-if="memberId == 3">
+                                <span class="pull-right" ng-if="memberId != null"><a data-scroll ng-click="closeDetail()" class="btn btn-main closeBtn">Close</a></span>
+                                <p class="text-center"><img src="/app/assets/angular/images/team/member-6.jpg" alt="" class="imgPro"></p>
+                                <div class="card">
+                                    <h1>Mrs. Anita Sehgal</h1>
+                                    <span class="title">Trainer</span>
+                                    <hr></hr>
+                                    <p class="text-justify"><strong class="color-black">Mrs. Sehgal</strong> is a life coach, certified hypnotherapist, regression therapist, healer, 
+                                        published author and poet. Over 40+ years of life's experiences and her academic background have devoted her to the
+                                         vocation of guiding and healing others.
+                                    </p>
+                                    <p class="text-justify">FOUNDER at HEALER MIND & BEYOND
+                                        <ul>
+                                            <li>
+                                                Extensive experience in healing modalities and regression therapy across multiple issues
+                                            </li>
+                                            <li>Dealt with emotional relationship, financial, social issues or blocks</li>
+                                            <li>Handled comples cases ranging from fears, phobias, accident and surgical traumas, inner child healing work, past life regression and clearence of foreign energies</li>
+                                            <li>Expertise in angel card reading and chakra balancing</li>
+                                            <li>Workshop leader and speaker at various forums on topic ranging from <strong class="color-black">"Self-Empowerment"</strong> to <strong class="color-black">"Spiritual Parenting"</strong></li>
+                                            <li>Educated and trained in the following healing modalities : 
+                                                <ul>
+                                                    <li>
+                                                        Post Graduate Diploma in Trans-Personal Regression Therapy from EKAA and TASSO Institute
+                                                    </li>
+                                                    <li>Integrated Clinical Hypnotherapist from India's Leading ISO Certified Hypnosis Institute - EKAA(formerly called Calafornia Hypnosis Institute of India)</li>
+                                                    <li>Advanced Redikkal Healing related to chakra healing and Foundation Course from Omnipresence Academy of Life</li>
+                                                    <li>Trained in Pranic Healing and Acupressure</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p> 
+                                    <p class="text-justify">Education
+                                            <ul>
+                                                <li>Master's in Social Work(Msw), Delhi School of Social Work, Delhi University</li>
+                                                <li>Post graduate diploma in Personal Management & Industrial Relations, Delhi School of Social Work</li>
+                                                <li>BSC. Home Science (Specialization in Child Psycology), Lay Irwin, New Delhi</li>
+                                            </ul>         
+                                    </p>
+                                    <p class="text-justify">Honor's & Recognitions
+                                        <ul>
+                                            <li>Recipient of Shrimoni Awards for Contribution to Female Entrepreneurship by the first lady of India</li>
+                                            <li>Regular columnist in Economic Times on technical analysis</li>
+                                            <li>Published author on book on laws and regulations pertaining to human resources in banking organizations titled "Bank Officers Service Regulations"</li>
+                                            <li>Published an anthology of poems titled "Word River Crossings"</li>
+                                            <li>Recognized poet and contributer to Poemhunter.com</li>
+                                        </ul>  
+
+                                    </p>
+                                    <p class="text-justify">Previous Experience
+                                        <ul>
+                                            <li>
+                                                More than 20 years of hands on experience in the stock market both as an entrepreneur and investor
+                                            </li>
+                                            <li>Gained a deep insight into the varying range of human emotions and its impact on the market psychology and consequently on the share prices</li>
+                                            <li>Over 13 years of hands-on experience of leading HR departments in large banks & dealing with complexities of multi-dimensional human behaviour</li>
+                                            <li>Extensive experience in conducting training program on soft skills development, skill enhancement and employee performance management</li>
+                                        </ul>
+                                    </p>
+                                    <div style="margin: 24px 0;" class="social">
+                                        <a href="#"><i class="fa fa-dribbble fs20"></i></a> 
+                                        <a href="#"><i class="fa fa-twitter fs20"></i></a>  
+                                        <a href="#"><i class="fa fa-linkedin fs20"></i></a>  
+                                        <a href="#"><i class="fa fa-facebook fs20"></i></a> 
+                                    </div>
+                                    <p class="text-center">
+                                        <a data-scroll href="/secure/contact" class="btn btn-main">Contact Us</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,3 +240,69 @@
         </div>    
     </section>    
 <div ng-include="'/app/assets/angular/views/footer.html'"></div>
+<style>
+    ul {
+        list-style-type: disc !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: left;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        border: 3px solid #DDD;
+        margin-top: -85px;
+        padding: 15px;
+        padding-top: 70px;
+        
+    }
+
+    .imgPro {
+        width: 100%;
+        border-radius: 140px;
+        height: 180px;
+        width: 180px;
+    }
+
+    .title {
+        color: grey;
+        font-size: 18px;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+    .closeBtn {
+        background: #000;
+        padding: 10px;
+        font-size: 12px;
+        position: absolute;
+        margin-left: -62px;
+    }
+    .social a i{
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+    .fs20 {
+        font-size: 20px;
+    }
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.color-black {
+    color: #000;
+}
+</style>

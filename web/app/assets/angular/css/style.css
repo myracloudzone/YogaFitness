@@ -40,6 +40,7 @@
 .gridImage {
   width: 100%;
   height: 320px;
+  cursor: pointer;
 }
 .ptb5 {
   padding-top: 5px;
@@ -57,6 +58,19 @@
 }
 .showAtLargeScreen {
   display: block;
+}
+.imageDescription {
+  padding: 10px;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #5bb12f !important;
 }
 @media only screen and (max-width: 767px){
   .navbar-collapse.in {

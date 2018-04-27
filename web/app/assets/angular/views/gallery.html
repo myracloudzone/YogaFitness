@@ -9,35 +9,27 @@
               <div class="col-md-12 col-sm-12">
                   <div class="row ">
                       <div class="col-md-12 col-sm-12 col-xs-12 service-item1">
-                            <div class="col-sm-12">
+                            <div class="col-sm-12" ng-mouseenter="stopSlide()" ng-mouseleave="startSlide()">
                                 <div id="homeCarousel" class="carousel slide">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    </ol>
-                                        
                                     <div class="carousel-inner" style="text-align: -webkit-center; background: rgba(0,0,0,0.5);">
                                         <div class="item" ng-repeat="image in collection track by $index" ng-class="$index == 0 ? 'active' : ''">
                                             <img ng-src="{{image.src}}" class="image-responsive" style="max-height :500px; width: 100%;"/>
                                             <div class="container">
-                                                <div class="carousel-caption">
+                                                <div class="carousel-caption" style="font-size: 28px;">
                                                 </div>
                                             </div>
+                                            <p class="imageDescription" style="margin-bottom: 0px;">{{image.description + ' ' + $index}}</p>
                                         </div>
-                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                            <span class="icon-prev"></span>
-                                        </a>
-                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                            <span class="icon-next"></span>
-                                        </a>  
+                                        
                                     </div>
-                                </div>          
+                                </div>
+
                             </div>
                             <div class="col-sm-12" style="margin-top: 10px;" id="lightgallery">
-                                    <div class="col-sm-4 plr0 ptb5" ng-repeat="image in collection" data-src="{{image.src}}" data-sub-html="<h4>{{image.name}}</p>">
-                                        <div class="col-sm-12 ">
+                                    <div class="col-sm-4 plr0 ptb5" ng-repeat="image in collection" data-src="{{image.src}}" data-sub-html="<h4>{{image.description + ' ' + ($index + 1)}}</p>">
+                                        <div class="col-sm-12">
                                             <img ng-src="{{image.src}}" class="boxShadow image-responsive gridImage" alt="Image">
+                                            <p class="imageDescription boxShadow">{{image.description + ' ' + ($index + 1)}}</p>
                                         </div>    
                                     </div>
                                 </div>
