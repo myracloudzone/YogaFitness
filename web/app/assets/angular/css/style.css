@@ -85,6 +85,9 @@ hr {
   height :500px; 
   width: 100%;
 }
+.carMargin {
+  margin-top: 37px !important;
+}
 @media only screen and (max-width: 767px){
   .navbar-collapse.in {
     overflow-y: scroll !important;
@@ -94,6 +97,9 @@ hr {
   }
   .showAtLargeScreen {
     display: none !important;
+  }
+  .carMargin {
+    margin-top: 48px !important;
   }
   .homeCar {
     height :300px !important; 
