@@ -81,6 +81,10 @@ hr {
   font-size: 14px;
   font-weight: 700;
 }
+.homeCar {
+  height :500px; 
+  width: 100%;
+}
 @media only screen and (max-width: 767px){
   .navbar-collapse.in {
     overflow-y: scroll !important;
@@ -90,6 +94,14 @@ hr {
   }
   .showAtLargeScreen {
     display: none !important;
+  }
+  .homeCar {
+    height :300px !important; 
+    width: 100%;
+  }
+  .xx {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
 }
