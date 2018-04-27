@@ -84,6 +84,8 @@ hr {
 .homeCar {
   height :500px; 
   width: 100%;
+  max-height :500px !important; 
+  min-height :500px !important; 
 }
 .carMargin {
   margin-top: 37px !important;
@@ -103,6 +105,8 @@ hr {
   }
   .homeCar {
     height :300px !important; 
+    max-height :300px !important; 
+    min-height :300px !important; 
     width: 100%;
   }
   .xx {
