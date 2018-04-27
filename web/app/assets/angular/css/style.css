@@ -72,6 +72,15 @@ hr {
   border: 0;
   border-top: 2px solid #5bb12f !important;
 }
+.newsFeed {
+  margin-top: 5px;
+  padding: 15px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
 @media only screen and (max-width: 767px){
   .navbar-collapse.in {
     overflow-y: scroll !important;
