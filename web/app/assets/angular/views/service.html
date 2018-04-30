@@ -1,39 +1,77 @@
 <div ng-include="'/app/assets/angular/views/header.html'" ng-controller="HeaderCtrl"></div>
-<section class="service-2 section team">
-  <div class="container">
-      <div class="row team-row">
-          <div class="text-center">
-              <h2>Services</h2>
-              <p>We are currently providing variour courses as a part of our primary service.</p>
-              <div class="border"></div>
-          </div>
-          <div class="col-md-12 col-sm-12">
-              <div class="row ">
-                  <div class="col-md-12 col-sm-12 col-xs-12 service-item1">
-                        <div class="col-sm-12 courseBox" ng-repeat="course in courses" ng-style="{'border-left': ('7px solid '+ course.color)}">
-                            <div style="width : 100%" class="ellipses">
-                                <a class="cursor-pointer color-black regular-strong link" style="width : 100%; font-size: 16px;"  ng-click="course.showDetails = !course.showDetails"><i ng-class="(course.showDetails == null || course.showDetails == false) ? 'fa fa-chevron-circle-right dropLink' : 'fa fa-chevron-circle-down dropLink'" ></i>&nbsp;&nbsp;{{course.name}}</a>  
-                            </div>
-                            <div style="width : 100%" ng-if="course.showDetails">
-                                    <div class="border2">
-        
+<section class="service-2 section team xx">
+        <div class="container">
+            <div class="row team-row">
+                <div class="text-center">
+                    <h2>Our Programs</h2>
+                    <p>We are currently providing variour program/courses as a part of our primary service.</p>
+                    <div class="border"></div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="row ">
+                        <div class="col-md-12 col-sm-12 col-xs-12 service-item1" style="padding-top:0px; padding-bottom: 0px;">
+                            <div class="row headerRow serviceHeader">
+                                <div class="col-sm-12 headerColor">
+                                    <h4>Online Program</h4>
+                                </div>
+                                <div class="col-sm-12 programBox">
+                                    <div class="col-sm-12 courseBox" ng-repeat="course in onlineCourses" ng-style="{'border-left': ('7px solid '+ course.color)}">
+                                        <div style="width : 100%" class="ellipses">
+                                            <a class="cursor-pointer color-black regular-strong link" style="width : 100%; font-size: 16px;"  ng-click="course.showDetails = !course.showDetails"><i ng-class="(course.showDetails == null || course.showDetails == false) ? 'fa fa-chevron-circle-right dropLink' : 'fa fa-chevron-circle-down dropLink'" ></i>&nbsp;&nbsp;{{course.name}}</a>  
+                                        </div>
+                                        <div style="width : 100%" ng-if="course.showDetails">
+                                                <div class="border2">
+                    
+                                                </div>
+                                                <p>No Details Available.</p>
+                                        </div>
                                     </div>
-                                    <p>No Details Available.</p>
+                                </div>
+                            </div>
+                            <div class="row headerRow serviceHeader" style="margin-top: 0px;">
+                                <div class="col-sm-12 headerColor">
+                                    <h4>Live Program</h4>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="col-sm-12 subHeader">
+                                        <h4>Self Empowerment</h4>
+                                    </div>
+                                    <div class="col-sm-12 courseBox" ng-repeat="course in selfCourses" ng-style="{'border-left': ('7px solid '+ course.color)}">
+                                        <div style="width : 100%" class="ellipses">
+                                            <a class="cursor-pointer color-black regular-strong link" style="width : 100%; font-size: 16px;"  ng-click="course.showDetails = !course.showDetails"><i ng-class="(course.showDetails == null || course.showDetails == false) ? 'fa fa-chevron-circle-right dropLink' : 'fa fa-chevron-circle-down dropLink'" ></i>&nbsp;&nbsp;{{course.name}}</a>  
+                                        </div>
+                                        <div style="width : 100%" ng-if="course.showDetails">
+                                                <div class="border2">
+                    
+                                                </div>
+                                                <p>No Details Available.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="col-sm-12 subHeader">
+                                        <h4>Professional Courses</h4>  
+                                    </div>
+                                    <div class="col-sm-12 courseBox" ng-repeat="course in professionalCourses" ng-style="{'border-left': ('7px solid '+ course.color)}">
+                                        <div style="width : 100%" class="ellipses">
+                                            <a class="cursor-pointer color-black regular-strong link" style="width : 100%; font-size: 16px;"  ng-click="course.showDetails = !course.showDetails"><i ng-class="(course.showDetails == null || course.showDetails == false) ? 'fa fa-chevron-circle-right dropLink' : 'fa fa-chevron-circle-down dropLink'" ></i>&nbsp;&nbsp;{{course.name}}</a>  
+                                        </div>
+                                        <div style="width : 100%" ng-if="course.showDetails">
+                                                <div class="border2">
+                    
+                                                </div>
+                                                <p>No Details Available.</p>
+                                        </div>
+                                    </div> 
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-12">
-                            <p class="text-center">Have a query??? Feel free to contact us.</p>
-                            <p class="text-center">
-                                    <a data-scroll href="/secure/contact" class="btn btn-main">Contact Us</a>
-                             </p>
-                        </div>
-                        
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>    
-</section>    
+                    </div>
+                </div>
+            </div>
+        </div>    
+      </section>   
+
 <div ng-include="'/app/assets/angular/views/footer.html'"></div>
 
 <style>
@@ -63,5 +101,31 @@
         position: relative;
         /* width: 80%; */
         background: #28ABE3;
+    }
+    .serviceHeader {
+        padding-bottom: 5px;
+        background: rgba(0,0,0,.2);
+        color: #fff;
+    }
+    .headerColor {
+        background: rgba(0,0,0,.7);
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .headerRow {
+        margin-right: -11px;
+        margin-left: -11px;
+        margin-top: -1px;
+    }
+    .programBox {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .subHeader {
+        background: rgba(0,0,0,.5);
+        margin-top: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-bottom: 10px;
     }
 </style>
