@@ -34,6 +34,11 @@ GMApp.config(['$routeProvider', '$stateProvider', '$locationProvider','notificat
             templateUrl: '/app/assets/angular/views/team.html',
             controller: 'TeamCtrl'
         })
+        .state('blog', {
+            url: prefix+'/blog',
+            templateUrl: '/app/assets/angular/views/blog.html',
+            controller: 'BlogCtrl'
+        })
         .state('service', {
             url: prefix+'/service',
             templateUrl: '/app/assets/angular/views/service.html',
