@@ -14,13 +14,14 @@ GMApp.run(['$rootScope', '$http', '$window', '$filter', 'ipCookie', '$mdDialog',
 				$("body").addClass("sidenav-toggled");
 			}
 		});
+		$rootScope.socialURL = {
+			facebook : "https://www.facebook.com/Indian-Institute-of-Mind-and-Spiritual-Sciences-1717858034941858",
+			twitter : "https://twitter.com/IIMSS1?s=08",
+			linkedIn : "https://www.linkedin.com/in/iimss-iimss-b0ba86163",
+			instagram : "https://instagram.com/download/?r=7677651893"
+		}
 		$rootScope.dialogList = [];
 		$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){ 
-			$rootScope.accountId = ipCookie('account');
-			console.log(ipCookie('loggedUser'));
-			if(ipCookie('loggedUser') != null && ipCookie('loggedUser') != '') {
-				$rootScope.loggedUser = ipCookie('loggedUser'); 
-			}
 			angular.forEach($rootScope.dialogList, function(v,k) {
 				$mdDialog.hide(v);
 			})
